@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* *{border: 1px solid;} */
+    </style>
+  </head>
+  <body class="manrope">
+    <!-- hero section -->
+    <header class="px-46 py-16 flex gap-8">
+      <!-- text section -->
+      <div>
+        <!-- title -->
+        <h1 class="font-bold text-5xl leading-16">
+          It's good <br />
+          tea time at The <br />
+          Tea House
+        </h1>
+        <p class="text-[#777777] font-medium text-lg my-8">
+          Tea and Botanical Solutions Supplier Give Optimum <br />Satisfaction
+          To Your Taste Buds.
+        </p>
+        <button
+          class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg font-bold"
+        >
+          Explore More
+          <i class="fa-solid fa-arrow-right -rotate-45 text-lg ml-1"></i>
+        </button>
+      </div>
+      <!-- image section -->
+      <div class="relative w-1/2">
+        <!-- image -->
+        <div>
+          <img class="w-full" src="images/banner.png" alt="" />
+        </div>
+        <!-- card -->
+        <div class="flex gap-3 items-center absolute bg-white rounded-lg shadow-lg left-28 bottom-2 p-4">
+          <!-- icon -->
+          <div><i class="fa-solid fa-star text-3xl"></i></div>
+          <!-- text -->
+          <div>
+            <h2 class="text-2xl font-bold">5.00</h2>
+            <p class="text-gray-500">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
