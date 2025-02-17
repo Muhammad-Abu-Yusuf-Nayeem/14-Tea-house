@@ -37,14 +37,14 @@
       };
     </script>
     <style>
-      section * {
-        /* border: 1px solid; */
+      .great-tea * {
+        border: 1px solid;
       }
     </style>
   </head>
   <body class="manrope">
     <!-- hero section -->
-    <header class="px-46 py-16 flex gap-8">
+    <header class="px-8 lg:px-46 py-16 flex flex-col gap-8 lg:flex-row">
       <!-- text section -->
       <div>
         <!-- title -->
@@ -65,14 +65,14 @@
         </button>
       </div>
       <!-- image section -->
-      <div class="relative w-1/2">
+      <div class="relative lg:w-1/2 w-full">
         <!-- image -->
         <div>
-          <img class="max-w-max" src="images/banner.png" alt="" />
+          <img class="lg:max-w-max" src="images/banner.png" alt="" />
         </div>
         <!-- card -->
         <div
-          class="flex gap-3 items-center absolute bg-white rounded-lg shadow-lg left-36 bottom-2 p-4"
+          class="flex gap-3 items-center absolute bg-white rounded-lg shadow-lg lg:left-36 left-20 bottom-2 p-4"
         >
           <!-- icon -->
           <div><i class="fa-solid fa-star text-3xl"></i></div>
@@ -85,18 +85,18 @@
       </div>
     </header>
     <!-- featured product section -->
-    <section class="px-46">
+    <section class="px-8 lg:px-46">
       <!-- title -->
       <div class="pt-14">
         <p class="text-5xl font-bold text-center pb-5">Our Featured Products</p>
-        <p class="w-2/3 text-center mx-auto text-base text-[#777777]">
+        <p class="lg:w-2/3 text-center mx-auto text-base text-[#777777]">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
         </p>
       </div>
       <!-- grid cards -->
-      <div class="py-12 grid grid-cols-4 gap-6">
+      <div class="py-12 grid sm:grid-cols-1 lg:grid-cols-4 lg:gap-6">
         <!-- cards 1 -->
         <div class="p-7 shadow-md rounded-lg bg-gray-100">
           <div><img class="mx-auto" src="images/tea-1.png" alt="" /></div>
@@ -137,6 +137,47 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- Great Tea section -->
+    <section
+      class="grid grid-cols-1 lg:grid-cols-2 lg:px-46 px-8 lg:mb-30 mb-5"
+    >
+      <!-- Image section -->
+      <div class="great-tea grid grid-cols-2 grid-rows-3 gap-7 mr-7">
+        <div class="bg-gradient-to-r from-red-100 to-red-500 rounded-lg"></div>
+        <div class="row-span-2 bg-[#58763928] rounded-lg">
+          <img class="mx-auto py-10" src="images/fresh-2.png" alt="" />
+        </div>
+        <div class="row-span-2 bg-[#e6a52331] rounded-lg">
+          <img class="mx-auto py-10" src="images/fresh-1.png" alt="" />
+        </div>
+        <div class="bg-gradient-to-r from-[#D9D9D9] to-white rounded-lg"></div>
+      </div>
+
+      <!-- Text section -->
+      <div class="">
+        <h1 class="text-5xl font-bold">
+          Great Tea, Freshly <br />
+          Presented
+        </h1>
+        <p class="text-gray-500 text-base my-5">
+          The meaning of gong cha is chanese is to provide the best tea to
+          emperor from all possessions . It represents the highest quality and
+          self expectation. Establishing in 2006, Gong cha had been deeply
+          appreciated by its custoers because of good wor ds of mouth and unique
+          customized service orginated from Taiwan.
+        </p>
+        <p class="text-xl font-bold">Unique Taste</p>
+        <p class="mb-5 mt-3 text-gray-500 text-base">
+          A Unique and different style from other teapots gives a luxurious and
+          minimalist impression
+        </p>
+        <p class="text-xl font-bold">Premium Quality</p>
+        <p class="mb-5 mt-3 text-gray-500 text-base">
+          Premium Quality that makes tea more elegant and more durable when you
+          use it.
+        </p>
       </div>
     </section>
   </body>
