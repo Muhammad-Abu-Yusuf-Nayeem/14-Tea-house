@@ -38,7 +38,7 @@
     </script>
     <style>
       .reviews * {
-        border: 1px solid;
+        /* border: 1px solid; */
       }
     </style>
   </head>
@@ -182,10 +182,10 @@
     </section>
     <!-- reviews section -->
     <section
-      class="mx-8 lg:mx-46 px-16 py-20 rounded-lg grid lg:grid-cols-2 grid-cols-1 gap-12 reviews bg-gradient-to-r from-orange-500 to-red-600"
+      class="mx-8 lg:mx-46 px-16 py-20 rounded-lg grid lg:grid-cols-2 grid-cols-1 gap-12 reviews bg-gradient-to-r from-orange-500 to-red-600 items-center"
     >
       <!-- text section -->
-      <div>
+      <div class="overflow-hidden">
         <!-- title -->
         <h3 class="font-semibold text-white text-4xl mb-5">
           Meet Our Super <br />Clients
@@ -204,18 +204,59 @@
         </button>
       </div>
       <!-- card section -->
-      <div
-        class="relative h-56 w-full md:3/4 bg-white text-black rounded-lg flex flex-col items-center justify-center"
-      >
-        <div class="absolute -top-5 -left-5 bg-white rounded-full">
-          <img class="p-1" src="images/client.png" alt="" />
+
+      <div>
+        <!-- middle card -->
+        <div class="relative top-40 z-10">
+          <div
+            class="absolute h-60 w-full md:w-3/4 bg-white text-black rounded-lg flex flex-col justify-center"
+          >
+            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+              <img class="p-1" src="images/client.png" alt="" />
+            </div>
+            <div class="px-4 y-4">
+              <p class="text-gray-500 mb-5">
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+              <p class="font-bold text-gray-900">Ilham Yuda</p>
+              <p class="font-bold text-gray-500"><small>Businessman </small></p>
+            </div>
+          </div>
         </div>
-        <p class="text-gray-500">
-          We are providing the best and suitable home insurance services for the
-          people who are interested to treatment
-        </p>
-        <p class="font-bold text-gray-700">Ilham Yuda</p>
-        <p><small>Businessman </small></p>
+        <!-- top card -->
+        <div
+          class="relative left-8 md:left-32 h-60 w-full md:w-3/4 bg-white text-black rounded-lg flex flex-col justify-center opacity-40"
+        >
+          <div class="absolute -top-5 -left-5 bg-white rounded-full">
+            <img class="p-1" src="images/client.png" alt="" />
+          </div>
+          <div class="px-4 y-4">
+            <p class="text-gray-500 mb-5">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <p class="font-bold text-gray-900">Ilham Yuda</p>
+            <p class="font-bold text-gray-600"><small>Businessman </small></p>
+          </div>
+        </div>
+
+        <!-- bottom card -->
+        <div
+          class="relative top-10 left-8 md:left-32 h-60 w-full md:w-3/4 bg-white text-black rounded-lg flex flex-col justify-center opacity-40"
+        >
+          <div class="absolute -top-5 -left-5 bg-white rounded-full">
+            <img class="p-1" src="images/client.png" alt="" />
+          </div>
+          <div class="px-4 y-4">
+            <p class="text-gray-500 mb-5">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <p class="font-bold text-gray-900">Ilham Yuda</p>
+            <p class="font-bold text-gray-700"><small>Businessman </small></p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
